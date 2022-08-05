@@ -8,4 +8,4 @@ dependencies:
   - plotly=5.9.0
   - sqlalchemy=1.4.32
   - streamlit=1.11.0  
-prefix: C:\Users\alkh\Anaconda3\envs\st_simple
+#prefix: C:\Users\alkh\Anaconda3\envs\st_simple
