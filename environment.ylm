@@ -1,0 +1,11 @@
+name: st_simple
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.8.13
+  - plotly
+  - streamlit
+  - pandas
+  - sqlalchemy
+prefix: C:\Users\alkh\Anaconda3\envs\st_simple
