@@ -39,7 +39,7 @@ st.markdown('''
  * 7 cases with different fracture permeabilities
  ''')
 
-st.image('.\\resources\\E1_3D_View_TEMP_01_20_May_2023.png', \
+st.image('.//resources//E1_3D_View_TEMP_01_20_May_2023.png', \
     caption='model snapshot with shown gridblock temperature')
 
 #%%----------------------------------------------------------------------------
@@ -114,13 +114,13 @@ b_coeff = col2_2.number_input(\
 @st.cache
 def load_model_results(allow_output_mutation=True):
     pp = [
-    ".\\cases\\fperm=250.pkl",
-    ".\\cases\\fperm=10000.pkl",
-    ".\\cases\\fperm=5000.pkl",
-    ".\\cases\\fperm=2500.pkl",
-    ".\\cases\\fperm=1500.pkl",
-    ".\\cases\\fperm=1000.pkl",
-    ".\\cases\\fperm=500.pkl"
+    ".//cases//fperm=250.pkl",
+    ".//cases//fperm=10000.pkl",
+    ".//cases//fperm=5000.pkl",
+    ".//cases//fperm=2500.pkl",
+    ".//cases//fperm=1500.pkl",
+    ".//cases//fperm=1000.pkl",
+    ".//cases//fperm=500.pkl"
     ]
     RR = {}
     for p in pp:
