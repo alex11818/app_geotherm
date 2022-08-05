@@ -2,7 +2,7 @@
 Streamlit app to showcase potential for geothermal energy production on NCS
 '''
 #%% Packages
-from sqlalchemy import func
+#from sqlalchemy import func
 import streamlit as st
 import pickle
 import copy
