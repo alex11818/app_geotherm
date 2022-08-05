@@ -170,7 +170,7 @@ dict_mnemonics= \
  'FGEG': 'FGEG: gross electricity generated',
  'WPOW_INJ': 'WPOW_INJ: injection power cost',
  'WPOW_PROD': 'WPOW_PROD: lifting power cost',
- 'FPOW': 'net power gain',
+ 'FPOW': 'FPOW: net power gain',
  'WBHP_PROD': 'WBHP_PROD: producer BHP',
  'WBHP_INJ': 'WBHP_INJ: injector BHP',
  'WTEMP_PROD': 'WTEMP_PROD: production temperature',
