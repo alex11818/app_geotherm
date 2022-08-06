@@ -377,7 +377,7 @@ Y = col4_2.multiselect(
     default=['FPOW', 'WTEMP_PROD', 'WWIR_INJ'], 
     format_func= mnemonic2description)
 
-fig = plotly_mult(RR, cases=selected_cases, y=Y, width=1000, height=500)
+fig = plotly_mult(RR, cases=selected_cases, y=Y, height=500)
 st.plotly_chart(fig)
 
 selected_day = st.select_slider(label='select day:',\
