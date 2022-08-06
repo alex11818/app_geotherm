@@ -370,7 +370,8 @@ def waterfall(RR, selected_cases=[1500], selected_day=1500):
 #---------------------------------------------------------
 col4_1, col4_2 = st.columns([1, 2])
 selected_cases = col4_1.multiselect(
-    label='select case(s) with fracture permeability, mD:', \
+#     label='select case(s) with fracture permeability, mD:', \
+    label='select fracture permeability, mD:', \
     options=list(RR.keys()), default=[1000, 1500, 2500], key='2',
     )
 
@@ -388,7 +389,8 @@ selected_day = st.select_slider(label='select day:',\
     options = [1, 300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700, 3000])
 
 selected_cases1 = st.multiselect(
-        label='select case(s) with fracture permeability, mD:', \
+#         label='select case(s) with fracture permeability, mD:', \
+        label='select fracture permeability, mD:', \
         options=list(RR.keys()), default=[1000, 1500, 2500], key='1',
         )
 
