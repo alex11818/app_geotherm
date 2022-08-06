@@ -262,7 +262,7 @@ def plotly_mult(RR, y='WTEMP_INJ', axes=None, cases='all', \
                                      line={
                                          'width': 2, 
                                          'color': clrs[cc if many_cases else ac], 
-                                         'dash':  dsh[vc]
+                                         'dash':  dsh[vc if many_cases else cc]
                                      }))   
                     vc += 1
                 ac += 1
