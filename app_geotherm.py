@@ -369,7 +369,7 @@ def waterfall(RR, selected_cases=[1500], selected_day=1500):
 
 #---------------------------------------------------------
 col4_1, col4_2 = st.columns([1, 2])
-selected_cases = col4_1.multiselect(
+selected_cases1 = col4_1.multiselect(
 #     label='select case(s) with fracture permeability, mD:', \
     label='select fracture permeability, mD:', \
     options=list(RR.keys()), default=[1000, 1500, 2500], key='2',
@@ -381,20 +381,20 @@ Y = col4_2.multiselect(
     default=['FPOW', 'WTEMP_PROD', 'WWIR_INJ'], 
     format_func= mnemonic2description)
 
-fig = plotly_mult(RR, cases=selected_cases, y=Y, height=450)
+fig = plotly_mult(RR, cases=selected_cases1, y=Y, height=450)
 st.plotly_chart(fig)
 
 selected_day = st.select_slider(label='select day:',\
     value=1500,\
     options = [1, 300, 600, 900, 1200, 1500, 1800, 2100, 2400, 2700, 3000])
 
-selected_cases1 = st.multiselect(
+selected_cases2 = st.multiselect(
 #         label='select case(s) with fracture permeability, mD:', \
         label='select fracture permeability, mD:', \
         options=list(RR.keys()), default=[1000, 1500, 2500], key='1',
         )
 
-fig_wtrf = waterfall(RR, selected_cases = selected_cases, selected_day=selected_day)
+fig_wtrf = waterfall(RR, selected_cases = selected_cases2, selected_day=selected_day)
 st.plotly_chart(fig_wtrf)
 #%%-- leftovers
 
