@@ -368,7 +368,7 @@ def waterfall(RR, selected_cases=[1500], selected_day=1500):
     return fig
 
 #---------------------------------------------------------
-col4_1, col4_2 = st.columns(2)
+col4_1, col4_2 = st.columns([1, 2])
 selected_cases = col4_1.multiselect(
     label='select case(s) with fracture permeability, mD:', \
     options=list(RR.keys()), default=[1000, 1500, 2500], key='2',
