@@ -309,7 +309,7 @@ def plotly_mult(RR, y='WTEMP_INJ', axes=None, cases='all', \
         width = width,
         height = height,
         margin=dict(l=10, r=50, t=25, b=25),    
-        xaxis = dict(title="time (days)"),
+#         xaxis = dict(title="time (days)"),
         yaxis = dict(title = axis_title[0], \
             titlefont = dict(color=None if many_cases else clrs[0]),
             tickfont=  dict(color=None if many_cases else clrs[0]),    
@@ -378,7 +378,7 @@ Y = col4_2.multiselect(
     default=['FPOW', 'WTEMP_PROD', 'WWIR_INJ'], 
     format_func= mnemonic2description)
 
-fig = plotly_mult(RR, cases=selected_cases, y=Y, height=500)
+fig = plotly_mult(RR, cases=selected_cases, y=Y, height=450)
 st.plotly_chart(fig)
 
 selected_day = st.select_slider(label='select day:',\
