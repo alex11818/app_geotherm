@@ -315,11 +315,12 @@ def plotly_mult(RR, y='WTEMP_INJ', axes=None, cases='all', \
             tickfont=  dict(color=None if many_cases else clrs[0]),    
         ),
         legend=dict(
-            yanchor="top", y=1,
-            xanchor="left", x=1 if len(axes_vectors)==1 else 1.05, 
+            yanchor="top", y=0,
+            xanchor="left", x=0, 
             # font={'size': 14}, 
             # traceorder='grouped',
-            groupclick="toggleitem"
+            groupclick="toggleitem",
+            orientation = "h",
         ))
 
     return fig
