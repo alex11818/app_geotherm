@@ -315,7 +315,7 @@ def plotly_mult(RR, y='WTEMP_INJ', axes=None, cases='all', \
             tickfont=  dict(color=None if many_cases else clrs[0]),    
         ),
         legend=dict(
-            yanchor="top", y=0,
+            yanchor="top", y=-0.05,
             xanchor="left", x=0, 
             # font={'size': 14}, 
             # traceorder='grouped',
