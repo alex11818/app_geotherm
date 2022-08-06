@@ -361,7 +361,7 @@ def waterfall(RR, selected_cases=[1500], selected_day=1500):
             title = "Energy balance (MW)",
             showlegend = True,
             yaxis=dict(title='MW'),
-            height=500
+            height=450
     )
     return fig
 
