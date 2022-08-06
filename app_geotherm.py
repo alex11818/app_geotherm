@@ -308,7 +308,7 @@ def plotly_mult(RR, y='WTEMP_INJ', axes=None, cases='all', \
         template='plotly_white',
         width = width,
         height = height,
-        margin=dict(l=10, r=10, t=25, b=10),         
+        margin=dict(l=10, r=10, t=30, b=10),         
 #         margin=dict(l=10, r=50, t=25, b=25),    
 #         xaxis = dict(title="time (days)"),
         yaxis = dict(title = axis_title[0], \
@@ -358,7 +358,7 @@ def waterfall(RR, selected_cases=[1500], selected_day=1500):
         ))
 
     fig.update_layout(template='plotly_white',\
-            margin=dict(l=10, r=10, t=25, b=10),
+            margin=dict(l=10, r=10, t=30, b=10),
             waterfallgroupgap = 0.25,
             title = "Energy balance (MW)",
             showlegend = True,
