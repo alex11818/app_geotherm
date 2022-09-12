@@ -360,7 +360,7 @@ def waterfall(RR, selected_cases=[1500], selected_day=1500):
     fig.update_layout(template='plotly_white',\
             margin=dict(l=10, r=10, t=30, b=10),
             waterfallgroupgap = 0.25,
-            title = "Energy balance (MW)",
+            title = "Energy balance for the symmetry element (MW)",
             showlegend = True,
             yaxis=dict(title='MW'),
             height=450
