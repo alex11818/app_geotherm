@@ -35,6 +35,7 @@ st.markdown('''
  * narrow fracture from injector to producer
  * heat influx from overburden and underburden  
  * produced water is reinjected at 50 degc
+ * 8 years of production
  * E500 model, DEADOIL option, single phase
  * 7 cases with different fracture permeabilities
  ''')
